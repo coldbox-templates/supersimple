@@ -1,6 +1,7 @@
 {
     "name":"Super Simple APP Template",
     "version":"1.2.0",
+    "location":"https://github.com/coldbox-templates/supersimple/archive/v1.2.0.zip",
     "author":"You",
     "slug":"cbtemplate-supersimple",
     "createPackageDirectory":false,
@@ -33,6 +34,5 @@
     "scripts":{
         "postVersion":"package set location='https://github.com/coldbox-templates/supersimple/archive/v`package version`.zip'",
         "postPublish":"!git push --follow-tags"
-    },
-    "location":"https://github.com/coldbox-templates/supersimple/archive/v1.2.0.zip"
+    }
 }
