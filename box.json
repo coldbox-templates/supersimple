@@ -1,38 +1,34 @@
 {
-    "name": "Super Simple APP Template",
-    "version": "1.3.0",
-    "location": "https://github.com/coldbox-templates/supersimple/archive/v1.3.0.zip",
-    "author": "You",
-    "slug": "cbtemplate-supersimple",
-    "createPackageDirectory": false,
-    "type": "mvc",
-    "keywords": "",
-    "homepage": "",
-    "documentation": "",
-    "repository": {
-        "type": "",
-        "url": ""
+    "name":"Super Simple APP Template",
+    "version":"1.4.0",
+    "location":"https://github.com/coldbox-templates/supersimple/archive/v1.4.0.zip",
+    "author":"You",
+    "slug":"cbtemplate-supersimple",
+    "createPackageDirectory":false,
+    "type":"mvc",
+    "keywords":"",
+    "homepage":"",
+    "documentation":"",
+    "repository":{
+        "type":"",
+        "url":""
     },
-    "bugs": "",
-    "shortDescription": "",
-    "contributors": [
-
-    ],
-    "ignore": [
-
-    ],
-    "devDependencies": {
-        "testbox": "^2.5.0"
+    "bugs":"",
+    "shortDescription":"",
+    "contributors":[],
+    "ignore":[],
+    "devDependencies":{
+        "testbox":"^2.5.0"
     },
-    "installPaths": {
-        "coldbox": "coldbox",
-        "testbox": "testbox"
+    "installPaths":{
+        "coldbox":"coldbox",
+        "testbox":"testbox"
     },
-    "dependencies": {
-        "coldbox": "^5.0.0-rc.1"
+    "dependencies":{
+        "coldbox":"^5.0.0-rc.1"
     },
-    "scripts": {
-        "postVersion": "package set location='https://github.com/coldbox-templates/supersimple/archive/v`package version`.zip'",
-        "postPublish": "!git push --follow-tags"
+    "scripts":{
+        "postVersion":"package set location='https://github.com/coldbox-templates/supersimple/archive/v`package version`.zip'",
+        "postPublish":"!git push --follow-tags"
     }
 }
