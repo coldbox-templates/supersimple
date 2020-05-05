@@ -1,8 +1,8 @@
 {
     "name":"Super Simple APP Template",
-    "version":"1.26.0",
-    "location":"https://github.com/coldbox-templates/supersimple/archive/v1.26.0.zip",
+	"version":"6.0.0-snapshot",
     "author":"You",
+	"location":"forgeboxStorage",
     "slug":"cbtemplate-supersimple",
     "createPackageDirectory":false,
     "type":"mvc",
@@ -18,17 +18,20 @@
     "contributors":[],
     "ignore":[],
     "devDependencies":{
-        "testbox":"^3.0.0"
+        "testbox":"^4.0.0"
     },
     "installPaths":{
         "coldbox":"coldbox",
         "testbox":"testbox"
     },
     "dependencies":{
-        "coldbox":"^5.0.0"
+        "coldbox":"be"
     },
     "scripts":{
-        "postVersion":"package set location='https://github.com/coldbox-templates/supersimple/archive/v`package version`.zip'",
-        "postPublish":"!git push --follow-tags"
+        "postPublish":"!git push --follow-tags",
+        "postInstall":"pathExists .env || cp .env.example .env",
+        "format":"cfformat run handlers/,*.cfc --overwrite",
+		"format:check":"cfformat check handlers/,*.cfc",
+		"format:watch":"cfformat watch path='handlers/,*.cfc' settingsPath='.cfformat.json'"
     }
 }
