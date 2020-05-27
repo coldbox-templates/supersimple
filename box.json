@@ -29,7 +29,7 @@
     },
     "scripts":{
         "postPublish":"!git push --follow-tags",
-        "postInstall":"pathExists .env || cp .env.example .env",
+        "postInstall":"pathExists .env || cp env.example .env && mv env.example .env.example",
         "format":"cfformat run handlers/,*.cfc --overwrite",
 		"format:check":"cfformat check handlers/,*.cfc",
 		"format:watch":"cfformat watch path='handlers/,*.cfc' settingsPath='.cfformat.json'"
