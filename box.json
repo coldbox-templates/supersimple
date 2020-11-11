@@ -1,8 +1,8 @@
 {
     "name":"Super Simple APP Template",
-	"version":"6.0.0",
+    "version":"6.1.0",
     "author":"You",
-	"location":"forgeboxStorage",
+    "location":"forgeboxStorage",
     "slug":"cbtemplate-supersimple",
     "createPackageDirectory":false,
     "type":"mvc",
@@ -31,7 +31,7 @@
         "postPublish":"!git push --follow-tags",
         "postInstall":"pathExists .env || cp env.example .env && mv env.example .env.example",
         "format":"cfformat run handlers/,*.cfc --overwrite",
-		"format:check":"cfformat check handlers/,*.cfc",
-		"format:watch":"cfformat watch path='handlers/,*.cfc' settingsPath='.cfformat.json'"
+        "format:check":"cfformat check handlers/,*.cfc",
+        "format:watch":"cfformat watch path='handlers/,*.cfc' settingsPath='.cfformat.json'"
     }
 }
