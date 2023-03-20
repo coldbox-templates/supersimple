@@ -1,6 +1,6 @@
 {
     "name":"Super Simple APP Template",
-    "version":"7.0.0",
+    "version":"7.0.0-snapshot",
     "author":"You",
     "location":"forgeboxStorage",
     "slug":"cbtemplate-supersimple",
@@ -18,20 +18,25 @@
     "contributors":[],
     "ignore":[],
     "devDependencies":{
-        "testbox":"^4.0.0"
+        "testbox":"^4.0.0",
+        "commandbox-dotenv":"*",
+        "commandbox-cfconfig":"*",
+        "commandbox-cfformat":"*"
     },
     "installPaths":{
-        "coldbox":"coldbox",
-        "testbox":"testbox"
+        "coldbox":"lib/vendor/coldbox/",
+        "testbox":"lib/vendor/testbox/"
     },
     "dependencies":{
         "coldbox":"^6.0.0"
     },
     "scripts":{
-        "postPublish":"!git push --follow-tags",
-        "postInstall":"pathExists .env || cp env.example .env && mv env.example .env.example",
-        "format":"cfformat run handlers/,*.cfc --overwrite",
-        "format:check":"cfformat check handlers/,*.cfc",
-        "format:watch":"cfformat watch path='handlers/,*.cfc' settingsPath='.cfformat.json'"
+        "postInstall":"pathExists .env || cp .env.example .env && package set ignore=[]",
+        "format":"cfformat run config/,handlers/,interceptors/,models/,modules_app/,tests/specs/,*.cfc --overwrite",
+        "format:check":"cfformat check config/,handlers/,interceptors/,models/,modules_app/,tests/specs/,*.cfc",
+        "format:watch":"cfformat watch path='config/,handlers/,interceptors/,models/,modules_app/,tests/specs/,*.cfc' settingsPath='.cfformat.json'"
+    },
+    "testbox":{
+        "runner":"/tests/runner.cfm"
     }
 }
