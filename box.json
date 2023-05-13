@@ -16,7 +16,10 @@
     "bugs":"",
     "shortDescription":"",
     "contributors":[],
-    "ignore":[],
+    "ignore":[
+		"changelog.md",
+        ".github/**"
+	],
     "devDependencies":{
         "testbox":"be",
         "commandbox-dotenv":"*",
