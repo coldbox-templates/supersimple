@@ -16,9 +16,12 @@
     "bugs":"",
     "shortDescription":"",
     "contributors":[],
-    "ignore":[],
+    "ignore":[
+		"changelog.md",
+        ".github/**"
+	],
     "devDependencies":{
-        "testbox":"^4.0.0",
+        "testbox":"^5.0.0",
         "commandbox-dotenv":"*",
         "commandbox-cfconfig":"*",
         "commandbox-cfformat":"*"
