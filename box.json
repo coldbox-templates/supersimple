@@ -1,6 +1,6 @@
 {
     "name":"Super Simple APP Template",
-    "version":"6.19.0",
+    "version":"6.20.0",
     "author":"You",
     "location":"forgeboxStorage",
     "slug":"cbtemplate-supersimple",
@@ -17,9 +17,9 @@
     "shortDescription":"",
     "contributors":[],
     "ignore":[
-		"changelog.md",
+        "changelog.md",
         ".github/**"
-	],
+    ],
     "devDependencies":{
         "testbox":"^5.0.0",
         "commandbox-dotenv":"*",
