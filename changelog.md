@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [] - 2023-05-19
+
 ### Fixed
 
 - Added `allowPublicKeyRetrieval=true` to the `db` connection string
@@ -33,4 +35,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 [Unreleased]: https://github.com/coldbox-templates/supersimple/compare/v...HEAD
 
-[]: <https://github.com/coldbox-templates/supersimple/compare/8b9a0e65da7165f97a53f17423db30da7c348472...v>
+[]: <https://github.com/coldbox-templates/supersimple/compare/264bda1bdf17f072f6bf0159a50615aec1662c69...v>
+
+\[]: <https://github.com/coldbox-templates/supersimple/compare/8b9a0e65da7165f97a53f17423db30da7c348472...v>
