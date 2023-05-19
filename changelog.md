@@ -5,9 +5,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-----
+* * *
 
 ## [Unreleased]
+
+## [] - 2023-05-19
 
 ### Fixed
 
@@ -30,3 +32,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - vscode introspection and helpers
 - Docker build and compose consolidation to the `build` folder
 - Cleanup of `tests` to new standards
+
+[Unreleased]: https://github.com/coldbox-templates/supersimple/compare/v...HEAD
+
+[]: <https://github.com/coldbox-templates/supersimple/compare/264bda1bdf17f072f6bf0159a50615aec1662c69...v>
+
+\[]: <https://github.com/coldbox-templates/supersimple/compare/8b9a0e65da7165f97a53f17423db30da7c348472...v>
