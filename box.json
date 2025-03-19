@@ -1,6 +1,6 @@
 {
     "name":"Super Simple APP Template",
-    "version":"7.2.0",
+    "version":"7.3.0",
     "author":"You",
     "location":"forgeboxStorage",
     "slug":"cbtemplate-supersimple",
@@ -17,13 +17,12 @@
     "shortDescription":"",
     "contributors":[],
     "ignore":[
-		"changelog.md",
+        "changelog.md",
         ".github/**"
-	],
+    ],
     "devDependencies":{
-        "testbox":"^5.0.0",
-        "commandbox-dotenv":"*",
-        "commandbox-cfconfig":"*",
+        "testbox":"^6.0.0",
+        "commandbox-boxlang":"*",
         "commandbox-cfformat":"*"
     },
     "installPaths":{
@@ -37,7 +36,7 @@
         "postInstall":"pathExists .env || cp .env.example .env && package set ignore=[]",
         "format":"cfformat run config/,handlers/,interceptors/,models/,modules_app/,tests/specs/,*.cfc ./.cfformat.json --overwrite",
         "format:check":"cfformat check config/,handlers/,interceptors/,models/,modules_app/,tests/specs/,*.cfc ./.cfformat.json",
-        "format:watch":"cfformat watch path='config/,handlers/,interceptors/,models/,modules_app/,tests/specs/,*.cfc' settingsPath='.cfformat.json'",
+        "format:watch":"cfformat watch path='config/,handlers/,interceptors/,models/,modules_app/,tests/specs/,*.cfc' settingsPath='.cfformat.json'"
     },
     "testbox":{
         "runner":"/tests/runner.cfm"
