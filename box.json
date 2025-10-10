@@ -34,7 +34,7 @@
         "testbox":"testbox/"
     },
     "dependencies":{
-        "coldbox":"be"
+        "coldbox":"^8.0.0"
     },
     "scripts":{
         "postInstall":"pathExists .env || cp .env.example .env && package set ignore=[]",
