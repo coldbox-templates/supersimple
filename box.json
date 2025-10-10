@@ -1,6 +1,6 @@
 {
     "name":"Super Simple APP Template",
-    "version":"7.5.0",
+    "version":"8.0.0",
     "author":"You",
     "location":"forgeboxStorage",
     "slug":"cbtemplate-supersimple",
@@ -18,7 +18,11 @@
     "contributors":[],
     "ignore":[
         "changelog.md",
-        ".github/**"
+		".github/ISSUE_TEMPLATE",
+		".github/workflows/*",
+		".github/CONTRIBUTING.md",
+		".github/FUNDING.YML",
+		".github/PULL_REQUEST_TEMPLATE.md"
     ],
     "devDependencies":{
         "testbox":"^6.0.0",
@@ -30,7 +34,7 @@
         "testbox":"testbox/"
     },
     "dependencies":{
-        "coldbox":"^7.0.0"
+        "coldbox":"^8.0.0"
     },
     "scripts":{
         "postInstall":"pathExists .env || cp .env.example .env && package set ignore=[]",
